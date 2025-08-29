@@ -121,17 +121,21 @@ $(document).ready(function () {
       $("nav.nav_mobile").removeClass("transformed");
       $("body").removeClass("mm_noscroll");
     });
-    // $("nav.nav_mobile ul.hdr_menu>li>a").click(function (e) {
-    //   e.preventDefault();
-    //   e.stopPropagation();
-    //   // $(".menu_btn").removeClass("clicked");
-    //   // $("nav.nav_mobile").removeClass("transformed");
-    //   $(this).toggleClass("show");
-    //   $(this).siblings("ul").slideToggle();
-    //   $(this).parents("li").siblings().find("ul").slideUp();
-    //   $(this).parents("li").siblings().find("a").removeClass("show");
-    //   // $("body").removeClass("mm_noscroll");
-    // });
+    $("nav.nav_mobile ul.hdr_menu li").each(function () {
+      if ($(this).children("ul").length > 0) {
+          $(this).addClass("has_sub");
+      }
+    });
+    $("nav.nav_mobile ul.hdr_menu li.has_sub>a").click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // $(".menu_btn").removeClass("clicked");
+        // $("nav.nav_mobile").removeClass("transformed");
+        $(this).toggleClass("show");
+        $(this).siblings("ul").slideToggle();
+        $(this).parents("li").siblings().find("ul").slideUp();
+        $(this).parents("li").siblings().find("a").removeClass("show");
+    });
 
 
 
@@ -295,7 +299,16 @@ $(document).ready(function () {
       $(".seacrh_mobile_icon").removeClass("clicked");
       $(".mobile_search_sect").fadeOut();
   })
-  // * Profile js
+  // * Profile js   
+   // * Mobile search js
+    $(".seacrh_mobile_icon").click(function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(this).toggleClass("clicked");
+      $(".mobile_search_sect").fadeToggle();
+      $(".prof_drop").removeClass("transformed");
+  })
+  // * Mobile search js
   // * Modal js
   $(".open_modal").click(function (e) {
     e.preventDefault();

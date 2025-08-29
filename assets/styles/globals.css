@@ -405,6 +405,7 @@ body {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
 }
 
 .item_info {
@@ -682,49 +683,6 @@ body {
 .more:hover {
   background-color: #ca6313;
 }
-
-
-/* Search sect */
-
-.search_sect {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 100%;
-}
-
-.search_input {
-  display: block;
-  width: 100%;
-  min-height: 44px;
-  padding: 12px 16px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #747474;
-  border: 1px solid #8A6FB2;
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
-}
-
-.search_button {
-  display: block;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  right: 12px;
-  cursor: pointer;
-  background: none;
-  background-image: url("../icons//search_icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-
-/* Search sect */
 
 
 /* *All pages Grid */
