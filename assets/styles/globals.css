@@ -690,7 +690,7 @@ body {
 .card_item {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
+  /* padding: 5px; */
   width: 100%;
   position: relative;
   /*overflow: hidden;*/
