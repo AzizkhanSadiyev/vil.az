@@ -1673,7 +1673,7 @@ nav.nav_mobile .number_links {
 .menu_catg_row:has(> .card_item_catg:nth-child(5)) .card_item_catg {
     display: inline-block;
     width: 100%;
-    margin: 0 0 32px;
+    margin: 0 0 24px;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
@@ -1972,6 +1972,14 @@ nav.nav_mobile .number_links {
 
     .hd_search .search_row {
         padding: 9px 16px;
+    }
+
+    .wrap_category_menu {
+        height: calc(100vh - 58px);
+    }
+
+    .scroll_section {
+        max-height: calc(100vh - 180px);
     }
 
     /* Header responsive */
