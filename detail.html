@@ -1,852 +1,1743 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rokol.az | Detail </title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vil.az | Detail</title>
 
-        <!-- Use to all pages  css -->
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-        <!-- gallery -->
-        <link rel='stylesheet prefetch' href='css/gallery/gallery.css'>
-        <link rel="stylesheet" href="css/gallery/gallery_style.css">
-        <!-- gallery -->
-        <link rel="stylesheet" href="css/header.css?v=1.1.11" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/style.css?v=1.1.11" />
-        <!-- Use to all pages  css -->
+    <!-- Use to this pages  css -->
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/slider.css" />
+    <link rel="stylesheet" href="assets/styles/button.css" />
+    <!-- Use to this pages  css -->
 
-        <!-- Jquery part all pages-->
-        <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Use to all pages  css -->
+    <link rel="stylesheet" href="assets/styles/globals.css" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- Use to all pages  css -->
 
-    </head>
+    <!-- Jquery part all pages-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Jquery part all pages-->
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header" id="header">
+            <div class="main_center">
+                <div class="header_top">
+                    <div class="header_left">
+                        <div class="logo_sect clearfix">
+                            <a href="/" class="logo">
+                                <div class="logo_img">
+                                    <img src="assets/icons/logo.svg?v2" alt="Logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hd_search desk_show">
+                            <form method="get" action="">
+                                <div class="search_row">
+                                    <div class="search_select">
+                                        <button type="button" class="search_category open_catg_menu">
+                                                Bütün kateqoriyalar
+                                                <span class="caret"></span>
+                                            </button>
+                                    </div>
+                                    <input type="text" name="q" class="search_input" placeholder="Məhsulları axtarın..." />
+                                    <button type="submit" class="search_btn" aria-label="Axtar"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="header_row">
+                            <div class="hd_r_icons">
+                                <div class="lang_sect desk_show">
+                                    <div class="lang_btn">az</div>
+                                    <ul class="langs">
+                                        <li class="active">
+                                            <a href>Az</a>
+                                        </li>
+                                        <li><a href>En</a></li>
+                                        <li><a href>Ru</a></li>
+                                    </ul>
+                                </div>
+                                <div class="seacrh_mobile_icon"></div>
+                                <ul class="shop_icons_list">
+                                    <li>
+                                        <a href="javascript:void(0)" class="shop_icon icon_calc open_calc"></a>
+                                    </li>
+                                    <li class="cart_icon">
+                                        <a href class="shop_icon icon_fav">
+                                            <span class="cart_count">1</span>
+                                        </a>
+                                    </li>
+                                    <li class="cart_icon">
+                                        <a href class="shop_icon icon_backet">
+                                            <span class="cart_count">1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="prof_items_sect">
+                                    <!-- <a
+                                            href="#"
+                                            class="btn_item primary login_btn">
+                                            <span>Daxil ol</span>
+                                        </a> -->
+                                    <div class="login_profile"></div>
+                                    <div class="prof_drop">
+                                        <div class="profile_setting clearfix">
+                                            <ul class="profile_list clearfix">
+                                                <li class="prof_icon icon_prof">
+                                                    <a href="#" class="clearfix">
+                                                        <span class="prof_icon_name">Aziz</span>
+                                                    </a>
+                                                </li>
+                                                <li class="prof_icon">
+                                                    <a href="#" class="clearfix">
+                                                        <span class="prof_icon_name">Sifarişlərim</span>
+                                                    </a>
+                                                </li>
+                                                <li class="prof_icon">
+                                                    <a href="#" class="clearfix">
+                                                        <span class="prof_icon_name">Seçilmişlərim</span>
+                                                    </a>
+                                                </li>
+                                                <li class="prof_icon">
+                                                    <a href="#" class="clearfix">
+                                                        <span class="prof_icon_name">Ünvanlarım</span>
+                                                    </a>
+                                                </li>
+                                                <li class="prof_icon">
+                                                    <a href="#" class="clearfix">
+                                                        <span class="prof_icon_name">Şəxsi məlumatlarım</span>
+                                                    </a>
+                                                </li>
+                                                <li class="prof_icon icon_exit">
+                                                    <form action="#" method="post" data-hs-cf-bound="true">
+                                                        <input type="hidden" name="_token" value="CktValaCU0C6HB3xONX2Z1AU6GiEn3lZAUDySP41" autocomplete="off" />
+                                                        <button class="clearfix">
+                                                                <span class="prof_icon_name">Çıxış</span>
+                                                            </button>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu_btn open"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd_search mobile_search_sect">
+                    <form method="get" action="#" data-hs-cf-bound="true">
+                        <div class="search_row clearfix">
+                            <input type="text" name="q" class="search_input" value="" placeholder="Sayt üzrə axtarış" />
+                            <button type="submit" class="search_btn"></button>
+                        </div>
+                    </form>
+                </div>
+                <nav class="nav_desk" style="display: none">
+                    <ul class="hdr_menu clearfix">
+                        <li>
+                            <a href class>
+                                    Haqqımızda
+                                </a>
+                            <div class="drop_section">
+                                <ul class="drop_list">
+                                    <li>
+                                        <a href>Məxfilik Siyasəti</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Məhsullar
+                                </a>
+
+                            <div class="drop_section">
+                                <ul class="drop_list">
+                                    <li>
+                                        <a href>İNŞAAT BOYALARI</a>
+                                        <div class="drop_section drop_two">
+                                            <ul class="drop_list">
+                                                <li>
+                                                    <a href>Daxili məkan boyaları</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Fasad boyaları</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Yol cizgi boyaları</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Astarlar və məcunlar</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Sintetik boya və laklar</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Taxta boyaları - lak qrupu</a>
+                                                </li>
+                                                <li>
+                                                    <a href>PVA və yapışdırıcı qrupu</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Rəngləndirmə sistemləri</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Səth qoruma və səth təmizləmə məhsulları</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href>SƏNAYE BOYALARI</a>
+                                        <div class="drop_section drop_two">
+                                            <ul class="drop_list">
+                                                <li>
+                                                    <a href>Sellülozik boya və laklar</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Rapid boyalar</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Epoksid boyalar, solventli</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Poliuretan məhsul qrupu</a>
+                                                </li>
+                                                <li>
+                                                    <a href>Epoksid örtük məhsulları, solventsiz</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href class>
+                                    Epoksid örtük məhsulları, solventsiz
+                                </a>
+                        </li>
+                        <li>
+                            <a href class>
+                                    Həftəni̇n təkli̇fi̇
+                                </a>
+                        </li>
+                        <li>
+                            <a href class>
+                                    Media
+                                </a>
+                            <div class="drop_section">
+                                <ul class="drop_list"></ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href class>
+                                    Kataloqlar
+                                </a>
+                        </li>
+                        <li>
+                            <a href class>
+                                    Əlaqə
+                                </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav_mobile">
+                <div class="menu_btn close"></div>
+                <div class="mob_header">
+                    <ul class="langs">
+                        <li class="active"><a href>Az</a></li>
+                        <li><a href>En</a></li>
+                        <li><a href>Ru</a></li>
+                    </ul>
+                </div>
+                <div class="mob_body">
+                    <ul class="hdr_menu">
+                        <li>
+                            <a href="" class>
+                                    İnşaat materialları
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Çitlər və maneələr</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Sement və toplu materiallar</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Boya məhsulları
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Xırdavat məhsulları
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Santexnika
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Elektrik
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Məişət avadanlıqları
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class>
+                                    Bağ-bağça
+                                </a>
+                            <ul>
+                                <li>
+                                    <a href="">Divar və fasad materialları</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">Kərpic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Tikinti blokları </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Dil və yiv plitələri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fasad panelləri və aksesuarları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Siding və aksesuarlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Süni daş</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob_ftr">
+                    <ul class="socials clearfix">
+                        <li>
+                            <a href="#" class="social_icon" target="_blank">
+                                <span class="scl_icn">
+                                        <img
+                                            src="assets/icons/wp_social.svg"
+                                            alt="Whatsapp" />
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social_icon" target="_blank">
+                                <span class="scl_icn">
+                                        <img
+                                            src="assets/icons/fb.svg"
+                                            alt="Facebook" />
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social_icon" target="_blank">
+                                <span class="scl_icn">
+                                        <img
+                                            src="assets/icons/ins.svg"
+                                            alt="Instagram" />
+                                    </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social_icon" target="_blank">
+                                <span class="scl_icn">
+                                        <img
+                                            src="assets/icons/lnkd.svg"
+                                            alt="Linkedn" />
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social_icon" target="_blank">
+                                <span class="scl_icn">
+                                        <img
+                                            src="assets/icons/ytb.svg"
+                                            alt="Youtube" />
+                                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="wrap_category_menu">
+                <div class="main_center">
+                    <div class="catg_row_item">
+                        <aside id="leftTabs" class="menu_sidebar">
+                            <div class="catg_tab active" data-tab="1">
+                                <img alt="İnşaat materialları" src="assets/icons/aside_icon_1.svg" />
+                                <span>İnşaat materialları</span>
+                            </div>
+                            <div class="catg_tab" data-tab="2">
+                                <img alt="Boya məhsulları" src="assets/icons/aside_icon_2.svg" />
+                                <span>Boya məhsulları</span>
+                            </div>
+                            <div class="catg_tab" data-tab="3">
+                                <img alt="Xırdavat məhsulları" src="assets/icons/aside_icon_3.svg" />
+                                <span>Xırdavat məhsulları</span>
+                            </div>
+                            <div class="catg_tab" data-tab="4">
+                                <img alt="Santexnika" src="assets/icons/aside_icon_4.svg" />
+                                <span>Santexnika</span>
+                            </div>
+                            <div class="catg_tab" data-tab="5">
+                                <img alt="Elektrik" src="assets/icons/aside_icon_5.svg" />
+                                <span>Elektrik</span>
+                            </div>
+                            <div class="catg_tab" data-tab="6">
+                                <img alt="Məişət avadanlıqları" src="assets/icons/aside_icon_6.svg" />
+                                <span>Məişət avadanlıqları</span>
+                            </div>
+                            <div class="catg_tab" data-tab="7">
+                                <img alt="Bağ-bağça" src="assets/icons/aside_icon_7.svg" />
+                                <span>Bağ-bağça</span>
+                            </div>
+                        </aside>
+                        <div id="rightContent" class="menu_content">
+                            <!-- 1 -->
+                            <section class="panel_menu active" data-child="1">
+                                <h2 class="menu_catg_title">İnşaat materialları</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title">
+                                                <a href="#">Beton ve karışımlar</a>
+                                            </h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>Şap, tesviye</li>
+                                                <li>Yapıştırıcılar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 2 -->
+                            <section class="panel_menu" data-child="2">
+                                <h2 class="menu_catg_title">Boya məhsulları</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Elektrikli aletler</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Matkap
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Avuç taşlama</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panç</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">El aletleri</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Tornavida
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Anahtar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Klemi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 3 -->
+                            <section class="panel_menu" data-child="3">
+                                <h2 class="menu_catg_title">Xırdavat məhsulları</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Kablolar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            NYM
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VVG</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">UTP</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Otomasyon</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Sigorta
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şalter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Kontaktör</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- 4 -->
+                            <section class="panel_menu" data-child="4">
+                                <h2 class="menu_catg_title">Santexnika</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title">
+                                                <a href="#">Beton ve karışımlar</a>
+                                            </h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>Şap, tesviye</li>
+                                                <li>Yapıştırıcılar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Beton ve karışımlar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Kuru karışımlar
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şap, tesviye</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Yapıştırıcılar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 5 -->
+                            <section class="panel_menu" data-child="5">
+                                <h2 class="menu_catg_title">Elektrik</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Elektrikli aletler</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Matkap
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Avuç taşlama</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panç</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">El aletleri</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Tornavida
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Anahtar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Klemi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 6 -->
+                            <section class="panel_menu" data-child="6">
+                                <h2 class="menu_catg_title">Məişət avadanlıqları</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Kablolar</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            NYM
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">VVG</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">UTP</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Otomasyon</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Sigorta
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Şalter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Kontaktör</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 7 -->
+                            <section class="panel_menu" data-child="7">
+                                <h2 class="menu_catg_title">Bağ-bağça</h2>
+                                <div class="scroll_section">
+                                    <div class="menu_catg_row">
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">Elektrikli aletler</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Matkap
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Avuç taşlama</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Panç</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card_item_catg">
+                                            <h3 class="sub_menu_title"><a href="#">El aletleri</a></h3>
+                                            <ul class="catg_sub_menu">
+                                                <li>
+                                                    <a href="#">
+                                                            Tornavida
+                                                            <span class="badge_catg">86</span>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Anahtar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Klemi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="section_wrap wrap_detail_product">
+                <div class="main_center ">
+                    <div class="section_wrap wrap_breadcrumb">
+                        <div class="breadcrumb">
+                            <a href="#">Əsas səhifə</a>
+                            <a href="#">Məhsullar</a>
+                            <span>Epoksid Bazaslı Təmir Qarışığı EPOKS 300</span>
+                        </div>
+                    </div>
+                    <div class="sect_body product_container ">
+                        <div class="wrap_left">
+
+                            <div class="section_wrap wrap_slider">
+                                <div class="sect_body slider_container ">
+                                    <div class="swiper-container">
+
+                                        <div class="swiper mySwiper_main">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="assets/images/detail_1.png" class="fancybox_item" data-fancybox="gallery_fancybox">
+                                                        <div class="fancybox_img">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="assets/images/detail_1.png" class="fancybox_item" data-fancybox="gallery_fancybox">
+                                                        <div class="fancybox_img">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="assets/images/detail_1.png" class="fancybox_item" data-fancybox="gallery_fancybox">
+                                                        <div class="fancybox_img">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="assets/images/detail_1.png" class="fancybox_item" data-fancybox="gallery_fancybox">
+                                                        <div class="fancybox_img">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- Add Arrows -->
+                                            <div class="swiper_arrows ">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div thumbsSlider="" class="swiper mySwiper_thumb">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="sld_thumb_img ">
+                                                        <div class="sld_thumb_in ">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="sld_thumb_img ">
+                                                        <div class="sld_thumb_in ">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="sld_thumb_img ">
+                                                        <div class="sld_thumb_in ">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="sld_thumb_img ">
+                                                        <div class="sld_thumb_in ">
+                                                            <img src="assets/images/detail_1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap_right">
+                            <div class="product_detail">
+                                <div class="product_content_sect">
+                                    <div class="product_info_table">
+                                        <p class="pr_short_info">Məhsulun kodu: </p>
+                                        <h1 class="product_title">ROKOL Epoksid Döşəmə Örtüyü Portağal Qabığı Effektli</h1>
+
+                                        <div class="price_section">
+                                            <div class="pr_price_info">
+                                                <div class="itm_price" id="item_price">
+                                                    <span class="new-price">297 AZN</span>
+                                                    <span class="old-price">330 AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pr_stock_info">
+                                            EPOKS 300 – yüksək möhkəmlik və dayanıqlılıq təmin edən, beton və metal səthlərin təmiri üçün nəzərdə tutulmuş epoksid əsaslı qarışıqdır.
+                                        </div>
+                                        <div class="pr_row">
+                                            <div class="pr_cat_name">Kateqoriya:</div>
+                                            <div class="pr_cat_info">Epoksid örtük məhsulları, solventsiz</div>
+                                        </div>
+                                        <div id="color_weights">
+                                            <div class="choose_weight">
+                                                <div class="pr_select_title">Məhsulu seçin:</div>
+                                                <div class="filter_check_items">
+                                                    <a href="https://rokol.az/product/81?price_id=128" class="f_check_type radio_btn">
+                                                        <input type="radio" name="weight" value="9" checked>
+                                                        <span>20 Kq</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-    <body>
-        <div class="page">
+                                        <!-- <div class="pr_tbl_right">
+                                            <div class="pr_main_buttons">
+                                                <a href="https://rokol.az/storage/pdfs/RrPkVAPUGuOHqQblNwgmTlXhybxnbMKAGO9MLopR.pdf" target="_blank" class="pr_buttons">
+                                                    <img src="https://rokol.az/img/icons/pr_pdf.svg?v1" alt="pdf">
+                                                </a>
 
-            <header class="header" id="header">
-                <div class="header_top clearfix">
-                    <div class="main_center clearfix">
-                        <div class="header_left">
+
+
+                                                <a href="#" target="_blank" class="pr_buttons">
+                                                    <img src="https://rokol.az/img/icons/pr_print.svg?v1" alt="print">
+                                                </a>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                    <div class="product_select_proporties">
+                                        <div class="pr_row add_backet_sect">
+                                            <div class="pr_slct_left">
+                                                <div class="filter_check_items">
+                                                    <div class="product_counter">
+                                                        <input type="hidden" name="counter" value="1">
+                                                        <button type="button" class="pr_btn_counter pr_minus"></button>
+                                                        <div class="pr_number_sect"><span class="pr_number">1</span></div>
+                                                        <button type="button" class="pr_btn_counter pr_plus"></button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="btn_detail btn_basket" onclick="addToCart(81)">
+                                                <span class="add_basket detail_basket_btn">
+                                            Səbətə əlavə et
+                                        </span>
+                                                <span class="added_basket">
+                                            Səbətə əlavə edildi
+                                        </span>
+                                                <span class="added_basket color_sect">
+                                            Rəng seçimi edin
+                                        </span>
+                                            </div>
+                                            <!-- click after addclass "dofav" -->
+
+                                            <div class="btn_detail btn_fav " data-product-id="81" data-price-id="128">
+                                                <span>
+                                            Seçilmişlərdə saxla
+                                        </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="share_section">
+                                            <span class="sh_name">PAYLAŞ:</span>
+                                            <ul>
+                                                <li class="sh_fb">
+                                                    <a href="javascript:void(0)"><img src="https://rokol.az/img/icons/s_fb.svg" alt="fb"></a>
+                                                </li>
+                                                <li class="sh_tw">
+                                                    <a href="javascript:void(0)"><img src="https://rokol.az/img/icons/s_twt.svg" alt="twt"></a>
+                                                </li>
+                                                <!-- <li class="sh_ms">
+                                            <a href="javascript:void(0)"><img src="https://rokol.az/img/icons/s_msg.svg" alt="msg"></a>
+                                        </li> -->
+                                                <li class="sh_wp">
+                                                    <a href=""><img src="https://rokol.az/img/icons/s_wp.svg" alt="wp"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="in_detail">
+                                            <p class="pr_select_title">
+                                                200 AZN-dən yuxarı çatdırılma pulsuzdur.
+                                            </p>
+                                            <!-- <span class="pr_cat_name open_pop">
+                                        Ətraflı
+                                    </span> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product detail section -->
+
+                    <!-- Product tab content -->
+
+                    <div class="section_wrap wrap_tab_product">
+                        <div class="sect_body clearfix">
+
+                            <div class="benefit_tabs">
+                                <div class="bf_tb_hd">
+                                    <div class="bt_tb_title clicked_tab_btn active" data-id="0">Məhsul haqqında</div>
+                                    <div class="bt_tb_title clicked_tab_btn" data-id="1">Texniki göstəricilər</div>
+                                    <div class="bt_tb_title clicked_tab_btn" data-id="2">Zəmanət və texniki dəstək</div>
+                                </div>
+                                <div class="bf_tb_content">
+                                    <div class="bf_tb_items " data-id="0">
+                                        <div class="indicators_content">
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Məhsul haqqında:</h6>
+                                                <div>
+                                                    <p><span style="font-size:11pt">Epoksid qatranı əsaslı, iki komponentli, tərkibində solvent olmayan, portağal qabığı g&ouml;r&uuml;n&uuml;şl&uuml; epoksid d&ouml;şəmə &ouml;rt&uuml;y&uuml;d&uuml;r.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">İstifadə Sahələri:</h6>
+                                                <div>
+                                                    <ul>
+                                                        <li>Sənayənin b&uuml;t&uuml;n sahələrində beton d&ouml;şəmələr;</li>
+                                                        <li>Anbarlar, avtomabil parkları, labarotoriyalar;</li>
+                                                        <li>Əcza&ccedil;ılıq, xəstəxana,zavod və fabriklərin beton səthləri.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">İstifadə Qaydaları:</h6>
+                                                <div>
+                                                    <p><span style="font-size:11pt"><strong>Səthin hazırlanması:</strong> Səth &ouml;ncə yağlardan, &ccedil;irkdən və k&ouml;hnə boyadan təmizlənməlidir. Təmiz və quru olmalıdır. Betonun nəmliyi 4%-dən aşağı, m&uuml;hitin nəmliyi isə 70%-dən aşağı olmalıdır. Məhsulun istifadəsi zamanı m&uuml;hitin temperaturu +10&deg; C-dən aşağı və +30&deg;C-dən yuxarı olmamalıdır.</span></p>
+
+                                                    <p><span style="font-size:11pt"><strong>Qarışığın hazırlanması: </strong>Astar və son qatın istifadəsi zamanı B komponent A komponent &uuml;zərinə əlavə edilərək, aşağı d&ouml;vriyyəli mikserlə 2-3 dəqiqə qarışdırılır, hava qabarcıqlarının &ccedil;ıxması &uuml;&ccedil;&uuml;n 2-3 dəqiqə g&ouml;zlənilib istifadə olunur.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Tətbiqi:</h6>
+                                                <div>
+                                                    <p><span style="font-size:11pt">İlk &ouml;ncə səthə 1-ci qat olaraq şəffaf astar və 2-ci qat olaraq rəngli araqat tətbiq olunur. Qatlar arasında 24 saat g&ouml;zlənilir. Hava şəraitin&shy;dən asılı olaraq quruma m&uuml;ddəti dəyişə bilər. Məhsulun sərfiyyatı səthin qurulu&shy;şundan, &ouml;rt&uuml;y&uuml;n qalınlığından asılı olaraq dəyişir. Astar səthə daraqlı mala və ya qısa t&uuml;kl&uuml; vərdənə ilə tətbiq edilməlidir. Ara qat daraqlı mala və ya x&uuml;susi hallarda vərdənə&nbsp; ilə tətbiq olunmalıdır. Son qat portağal &uuml;zl&uuml;k olan A komponentinə B komponenti əlavə edilərək aşağı d&ouml;vriyyəli mikser ilə tam homogen olana qədər qarışdırılır. Hava qabarcıqlarının &ccedil;ıxması &uuml;&ccedil;&uuml;n 3-4 dəqiqə g&ouml;zlənilməlidir. Hazırlanmış məhsul t&uuml;kl&uuml; vərdənə və ya daraqlı mala vasitəsi ilə səthə tətbiq edilir və qurumasını g&ouml;zləmə&shy;dən teksturalı vərdənə ilə &uuml;zərindən daranır. Səth tam olaraq 24 saata quruyur və 20 &deg;C-də 7 g&uuml;nə sərtləşir. 7 g&uuml;ndən sonra səth istifadəyə hazırdır.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bf_tb_items " data-id="1">
+                                        <div class="indicators_content">
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Xüsusiyyətlər:</h6>
+                                                <div>
+                                                    <p>Tərkibi: Epoksid qatranı əsaslı</p>
+
+                                                    <p>Rəngi: Ral koduna uyğun istənilən rənglərdə&nbsp;</p>
+
+                                                    <p>Quruma m&uuml;ddəti:&nbsp;</p>
+
+                                                    <p>Tam quruma: 24 saat</p>
+
+                                                    <p>Sərt quruma: 6-7 g&uuml;ndən sonra</p>
+
+                                                    <p>Qablaşdırma:</p>
+
+                                                    <p>Komponent A: 17 kq Net</p>
+
+                                                    <p>Komponent B: 2.9 kq Net</p>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <div>
+                                                    <p><span style="font-size:11pt">Astar &uuml;&ccedil;&uuml;n:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.2 - 0.4 kq/m&sup2;</span></p>
+
+                                                    <p><span style="font-size:11pt">Ara qat &uuml;&ccedil;&uuml;n:&nbsp;&nbsp;&nbsp; Ən az 0.3 mmqalınlıqda 0.48 kq/m&sup2;, 1 mm qalınlıq &uuml;&ccedil;&uuml;n 1.6 kq/m&sup2;, </span></p>
+
+                                                    <p><span style="font-size:11pt">Sonqat &uuml;&ccedil;&uuml;n:&nbsp;&nbsp;&nbsp;&nbsp; 0.7-1.0 kq/m&sup2;</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Saxlama müddəti:</h6>
+                                                <div>
+                                                    <p><span style="font-size:11pt">Sərin, quru və qapalı yerlərdə +10-30&deg;C-də bir ildir. Məhsulun istehlakı səthin strukturundan və &ouml;rt&uuml;y&uuml;n qalınlığından asılı olaraq dəyişir.</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Xəbərdarlıqlar:</h6>
+                                                <div>
+                                                    <p><strong>H315 -&nbsp;</strong>dərinin qıcıqlanmasına səbəb ola bilər.</p>
+
+                                                    <p><strong>H319 -&nbsp;</strong>ciddi g&ouml;z qıcıqlanmalarına səbəb olur.</p>
+
+                                                    <p><strong>P261</strong>&nbsp;&ndash; Toz, duman, qaz buxarı ilə tənəff&uuml;s etməməyə diqqət edin.</p>
+
+                                                    <p><strong>P273&nbsp;</strong>- ətrafa t&ouml;k&uuml;lməsinin qarşısını alın.</p>
+
+                                                    <p><strong>P280</strong>&nbsp;&ndash; Boya buxarının nəfəsə daxil olmaması və həm&ccedil;inin dəriyə və g&ouml;zə d&uuml;şməməsi &uuml;&ccedil;&uuml;n fərdi m&uuml;hafizə vasitələrindən istifadə edin.</p>
+
+                                                    <p><strong>P303+P361+P353</strong>&nbsp;- dəri (və ya sa&ccedil;) ilə təmasda olduqda geyiminizi &ccedil;ıxarın , dərinizi su ilə yuyun</p>
+
+                                                    <p><strong>P333+313 -&nbsp;</strong>dəridə qıcıqlanma və ya qızartı olarsa həkimə m&uuml;raciət edin</p>
+
+                                                    <p><strong>P403+P235</strong>&nbsp;&ndash; Yaxşı havalandırma olan yerdə saxlayın</p>
+
+                                                    <p><strong>P501</strong>&nbsp;&ndash; Qabı d&ouml;vlətlərarası standarta uyğun olaraq məhv edin.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="bf_tb_items " data-id="2">
+                                        <div class="indicators_content">
+                                            <ul style="list-style: none;margin: 0">
+                                                <li>
+                                                    - Texniki göstəricilərdə qeyd edilmiş məlumatlar elmi ve təcrübi biliklərə əsaslanir;
+                                                </li>
+                                                <li>
+                                                    - Matanat A&quot; şirkəti məhsulun müvafiq texniki şərt və dövlət standartlarına uyğunluğuna zəmanət verir.
+                                                </li>
+                                                <li>
+                                                    - Şirkətin mütəxəssislərinin rəhbərliyi altında görülən işlər istisna olmaqla, digər istifadəçilər tərəfindən təlimatdan kənar istifadə halları zamanı yarana biləcək problemlərə görə &quot;Matanat A&quot; şirkəti məsuliyyət daşımı;
+                                                </li>
+                                                <li>
+                                                    - Şirkət elmi-texniki inkişafla bağlı məhsulda dəyişiklik etmə hüququnu özündə saxlayır;
+                                                </li>
+                                                <li>
+                                                    - Texniki dəstək va ya daha geniş məlumat almaq üçün &quot;Matanat A&quot; şirkətinə müraciat edin!
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product tab content -->
+                    <div class="modal detail_modal" id="new_address_modal" data-id="create_address_modal">
+                        <div class="modal_section">
+                            <div class="modal_container">
+                                <div class="modal_header">
+                                    <h5 class="modal_title">Ətraflı məlumat</h5>
+                                    <span class="close_modal"></span>
+                                </div>
+                                <div class="modal_body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at iusto similique delectus, quos nemo sunt porro vero ipsum sint nihil, voluptatum eaque accusantium culpa inventore, pariatur labore debitis voluptates. Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Optio excepturi architecto possimus aspernatur explicabo. Similique, commodi. Est a tempore perspiciatis nisi nemo quidem consequuntur officia ratione? Obcaecati, nobis? Ad, minima?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal video_modal" id="new_address_modal" data-id="create_address_modal">
+                        <div class="modal_section">
+                            <div class="modal_container">
+                                <div class="modal_body">
+                                    <div class="close_modal_block">
+                                        <span class="close_modal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal self_calculator_modal" id="detailCalculatorModal" data-id="detailCalculatorModal">
+                        <div class="modal_section" style="overflow: visible;">
+                            <div class="modal_container" style="overflow: visible;">
+                                <div class="modal_header">
+                                    <h5 class="modal_title">Kalkulyator</h5>
+                                    <span class="close_modal"></span>
+                                </div>
+                                <div class="modal_body">
+                                    <div class="select_item" style="width: 100%">
+                                        <div class="calc_inputs">
+                                            <div class="form_item">
+                                                <label for="" id="width-label">Səthin eni (m):</label>
+                                                <input type="text" id="selfWidth" name="email" placeholder="Səthin eni (m):" value="" class="item_input">
+                                            </div>
+                                            <div class="form_item">
+                                                <label for="" id="length-label">Səthin uzunluğu (m):</label>
+                                                <input type="text" name="email" id="selfLength" placeholder="Səthin uzunluğu (m):" value="" class="item_input">
+                                            </div>
+                                            <div class="form_item">
+                                                <label for="">Tövsiyyə olunan qatın sayı:</label>
+                                                <input type="text" name="email" id="selfLayers" placeholder="Tövsiyyə olunan qatın sayı:" value="0" class="item_input">
+                                            </div>
+                                            <div class="form_item disable_input">
+                                                <label for="">Sərfiyyat norması (kq/kv.m):</label>
+                                                <input disabled type="text" name="email" id="selfConsumption" placeholder="Sərfiyyat norması (kq/kv.m):" value="" class="item_input">
+                                            </div>
+                                            <div class="form_item">
+                                                <button type="submit" class="btn_sign submit_btn" id="selfCalculateBtn">Hesabla
+                                </button>
+                                            </div>
+                                            <div class="modal answer_modal">
+                                                <div class="modal_section" style="overflow: visible;">
+                                                    <div class="modal_container" style="overflow: visible;">
+                                                        <div class="modal_header">
+                                                            <h5 class="modal_title">Hesablama nəticəsi</h5>
+                                                            <span class="close_modal"></span>
+                                                        </div>
+                                                        <div class="modal_body">
+                                                            <p>
+                                                                <strong>Hesablama nəticəsi: </strong>
+                                                                <span id="selfResult">
+
+                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer_full clearfix">
+                <div class="main_center clearfix">
+                    <div class="ftr_top clearfix">
+                        <div class="ftr_left">
                             <div class="logo_sect clearfix">
                                 <a href="/" class="logo">
                                     <div class="logo_img">
-                                        <img src="img/icons/logo.svg" alt="" />
+                                        <img src="assets/icons/logo.svg" alt="Logo" />
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="header_right clearfix">
+                        <div class="ftr_right">
+                            <div class="ftr_menu_sect">
+                                <ul class="footer_menu">
+                                    <li><span class="fm_hd">Məhsullar</span></li>
+                                    <li><a href="#">İnşaat materialları</a></li>
+                                    <li><a href="#">Boya məhsulları</a></li>
+                                    <li><a href="#">Xırdavat məhsulları</a></li>
+                                    <li><a href="#">Santexnika</a></li>
+                                    <li><a href="#">Elektrik</a></li>
+                                    <li><a href="#">Məişət avadanlıqları</a></li>
+                                    <li><a href="#">Bağ-bağça</a></li>
+                                </ul>
 
-                            <div class="header_row hrow_top clearfix">
-                                <div class="hd_search">
-                                    <form method="post" action="#">
-                                        <div class="search_row clearfix">
-                                            <input type="text" name="query" class="search_input" value="" placeholder="Sayt üzrə axtarış">
-                                            <button type="submit" class="search_btn"></button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="hd_r_icons">
-                                    <a href="" class="register_btn">ONLAYN SİFARİŞ</a>
-                                    <ul class="socials clearfix">
-                                        <li>
-                                            <a href="" class="social_icon" target="_blank">
-                                                <span class="scl_icn">
-                                                    <img src="img/icons/fb.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="social_icon" target="_blank">
-                                                <span class="scl_icn">
-                                                    <img src="img/icons/ins.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="social_icon" target="_blank">
-                                                <span class="scl_icn">
-                                                    <img src="img/icons/tiktok.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="social_icon" target="_blank">
-                                                <span class="scl_icn">
-                                                    <img src="img/icons/lnkd.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="social_icon" target="_blank">
-                                                <span class="scl_icn">
-                                                    <img src="img/icons/ytb.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="lang_sect desk">
-                                        <div class="lang_btn">Az</div>
-                                        <ul class="langs">
-                                            <li class="active"><a href="">Az</a> </li>
-                                            <li><a href="">En</a></li>
-                                            <li><a href="">Ru</a></li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="login_btn">Giriş</a>
-                                </div>
-                            </div>
-                            <div class="header_row clearfix">
-                                <nav class="nav_desk">
-                                    <ul class="hdr_menu clearfix">
-                                        <li>
-                                            <a href="" class="">HAQQIMIZDA </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">MƏHSULLAR </a>
-                                            <div class="drop_section">
-                                                <div class="drop_row">
-                                                    <div class="drop_col">
-                                                        <ul class="drop_list">
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="drop_col">
-                                                        <ul class="drop_list">
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Sənaye boyaları</a>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="#">Epoksid boyaları</a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="#">Epoksid boyalar</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Poliretan boyaları</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Sellülozik boyaları</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="drop_image">
-                                                    <img src="img/drop_image.png" alt="">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">RƏNGLƏR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="active">HƏFTƏNİN TƏKLİFİ </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">XƏBƏRLƏR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">KATALOQLAR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">ƏLAQƏ </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="hd_r_icons">
-                                    <a href="" class="repairer"></a>
-                                    <ul class="shop_icons_list">
-                                        <li>
-                                            <a href="" class="shop_icon icon_backet"></a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="shop_icon icon_fav"></a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="shop_icon icon_calc"></a>
-                                        </li>
-                                    </ul>
-                                    <a href="tel:*3030" class="call_center">*3030</a>
-                                </div>
-
-                                <div class="menu_btn open"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <nav class="nav_mobile">
-                    <div class="menu_btn close"></div>
-                    <div class="mob_body">
-                        <ul class="hdr_menu clearfix">
-                            <li>
-                                <a href="" class="active">Ana səhifə </a>
-                            </li>
-                            <li>
-                                <a href="" class="">Haqqımızda </a>
-                            </li>
-                            <li>
-                                <a href="" class="">Xidmətlər </a>
-                            </li>
-                            <li>
-                                <a href="" class="">Layihələr </a>
-                            </li>
-                            <li>
-                                <a href="" class="">Qalereya </a>
-                            </li>
-                            <li>
-                                <a href="" class="">Əlaqə </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mob_ftr">
-                        <a href="tel:+994507342371" class="number_links ">
-                            +994 50 734 23 71
-                        </a>
-                        <a href="" class="sing_links ">
-                            Bizə yazın!
-                        </a>
-                    </div>
-                </nav>
-            </header>
-
-            <main>
-
-                <!-- Wrap Category section -->
-                <div class="section_wrap wrap_product">
-                    <div class="main_center clearfix">
-                        <!-- Product detail section -->
-                        <div class="section_wrap wrap_breadcrumb">
-                            <div class="breadcrumb">
-                                <a href="/">Əsas səhifə</a>
-                                <a href="#">Məhsullar</a>
-                                <a href="#">Rokol Sellülozik Boya</a>
-                            </div>
-                            <div class="pr_like_button">
-                                <!-- click after addclass "dofav" -->
-                                <span class="favotites "></span>
-                                <a href="#" class="share_product"></a>
-                            </div>
-
-
-                        </div>
-
-                        <!-- Product detail section -->
-                        <div class="section_wrap wrap_category wrap_detail_product">
-                            <div class="sect_body product_container clearfix">
-                                <div class="wrap_left">
-                                    <div class="col_in">
-                                        <div class="fav_sect">
-                                            <div class="offer-tag">
-                                                <p class="offer_val">HƏFTƏNİN TƏKLİFİ</p>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="item_img">
-                                            <img src="img/item.png" alt="product" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="wrap_right">
-                                    <div class="product_detail">
-                                        <div class="product_content_sect">
-                                            <div class="product_info_table">
-
-                                                <div class="pr_tbl_left">
-                                                    <h1 class="product_title">Sellülozik Boya</h1>
-                                                    <div class="pr_row">
-                                                        <div class="pr_cat_name">Kateqoriya:</div>
-                                                        <div class="pr_cat_info">Məhsullar</div>
-                                                    </div>
-                                                    <div class="pr_row">
-                                                        <div class="pr_cat_name">Məhsulun kodu:</div>
-                                                        <div class="pr_cat_info">T8850-000003</div>
-                                                    </div>
-                                                    <div class="pr_row">
-                                                        <h2 class="pr_second_title">Texniki parametrlər</h2>
-                                                    </div>
-                                                    <div class="pr_row">
-                                                        <div class="pr_cat_name">Tipi:</div>
-                                                        <div class="pr_cat_info">Sellülozik</div>
-                                                    </div>
-                                                    <div class="pr_row">
-                                                        <div class="pr_cat_name">Görünüş:</div>
-                                                        <div class="pr_cat_info">Şəffaf</div>
-                                                    </div>
-                                                </div>
-                                                <div class="pr_tbl_right">
-                                                    <div class="pr_main_buttons">
-                                                        <a href="#" target="_blank" class="pr_buttons">
-                                                            <img src="img/icons/calculator.svg" alt="calculator">
-                                                        </a>
-                                                        <a href="#" target="_blank" class="pr_buttons">
-                                                            <img src="img/icons/pr_tpdf.svg" alt="pdf">
-                                                        </a>
-                                                        <a href="#" target="_blank" class="pr_buttons">
-                                                            <img src="img/icons/pr_mpdf.svg" alt="pdf">
-                                                        </a>
-                                                        <a href="#" target="_blank" class="pr_buttons">
-                                                            <img src="img/icons/pr_video.svg" alt="video">
-                                                        </a>
-                                                        <a href="#" target="_blank" class="pr_buttons">
-                                                            <img src="img/icons/pr_print.svg" alt="print">
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="product_select_proporties">
-                                                <div class="pr_row">
-                                                    <div class="pr_slct_left">
-                                                        <div class="pr_select_title">Çəkini seç</div>
-                                                        <div class="filter_check_items">
-                                                            <label class="f_check_type">
-                                                                <input type="radio" name="packaging" value="1">
-                                                                <span>2.5 Kq</span>
-                                                            </label>
-                                                            <label class="f_check_type">
-                                                                <input type="radio" name="packaging" value="1">
-                                                                <span>7.5 Kq</span>
-                                                            </label>
-                                                            <label class="f_check_type">
-                                                                <input type="radio" name="packaging" value="1">
-                                                                <span>12.5 Kq</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pr_slct_right">
-                                                        <div class="choose_color">
-                                                            <div class="pr_select_title">Rəngi seç</div>
-                                                            <div class="filter_check_items">
-                                                                <label class="f_check_type">
-                                                                    <input type="radio" name="color" value="1">
-                                                                    <span style="background-color: #C1AC93;"></span>
-                                                                </label>
-                                                                <label class="f_check_type">
-                                                                    <input type="radio" name="color" value="2">
-                                                                    <span style="background-color: #BB272D;"></span>
-                                                                </label>
-                                                                <label class="f_check_type">
-                                                                    <input type="radio" name="packaging" value="3">
-                                                                    <span style="background-color: #7a1115;"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pr_stock_info">
-                                                            <div class="itm_stock">
-                                                                <span class="stock_text">Stokda: 25 ədəd</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pr_price_info">
-                                                            <div class="itm_price">
-                                                                <span class="old-price">5.00 AZN</span>
-                                                                <span class="new-price">4.50 AZN</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="pr_row">
-                                                    <div class="pr_slct_left">
-                                                        <div class="filter_check_items">
-                                                            <div class="product_counter">
-                                                                <input type="hidden" name="counter" value="0">
-                                                                <button type="button" class="pr_btn_counter pr_minus"></button>
-                                                                <div class="pr_number_sect">Ədəd <span class="pr_number"></span></div>
-                                                                <button type="button" class="pr_btn_counter pr_plus"></button>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="pr_slct_right">
-                                                        <div class="itm_more">
-                                                            Səbətə əlavə et
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Product detail section -->
-
-                            <!-- Product tab content -->
-                            <div class="section_wrap wrap_tab_product">
-                                <div class="sect_body clearfix">
-
-                                    <div class="benefit_tabs">
-                                        <div class="bf_tb_hd">
-                                            <div class="bt_tb_title clicked_tab_btn active" data-id="0">Məhsul haqqında </div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="1">İstifadə Sahələri</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="2">Üstünlükləri</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="3">Texniki göstəricilər</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="4">Sərfiyyat</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="5">Saxlama müddəti</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="6">Xəbərdarlıqlar</div>
-                                            <div class="bt_tb_title clicked_tab_btn" data-id="7">Zəmanət</div>
-                                        </div>
-                                        <div class="bf_tb_content">
-                                            <div class="bf_tb_items " data-id="0"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz, şəffaf sellülozik tiner.</div>
-                                            <div class="bf_tb_items " data-id="1"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər </div>
-                                            <div class="bf_tb_items " data-id="2"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz</div>
-                                            <div class="bf_tb_items " data-id="3"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz, şəffaf sellülozik tiner.</div>
-                                            <div class="bf_tb_items " data-id="4"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz</div>
-                                            <div class="bf_tb_items " data-id="5"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz, şəffaf sellülozik tiner.</div>
-                                            <div class="bf_tb_items " data-id="6"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz</div>
-                                            <div class="bf_tb_items " data-id="7"><b>Məhsul haqqında :</b> Tərkibində qüvvətli həlledicilər olan rəngsiz, şəffaf sellülozik tiner.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Product tab content -->
-
-                            <!-- Product similar items -->
-                            <div class="section_wrap wrap_category wrap_similar_product">
-                                <div class="sect_header clearfix">
-                                    <h2 class="sect_title">
-                                        <a href="">Oxşar məhsullar</a>
-                                    </h2>
-                                </div>
-                                <div class="sect_body clearfix">
-                                    <div class="row">
-
-                                        <div class="col item_col clearfix">
-                                            <div class="col_in">
-                                                <div class="fav_sect">
-                                                    <!-- click after addclass "dofav" -->
-                                                    <span class="favotites dofav"></span>
-                                                </div>
-                                                <a href="#" class="item_img">
-                                                    <img src="img/item.png" alt="product" />
-                                                </a>
-                                                <div class="item_content">
-                                                    <h4 class="itm_title">
-                                                        Rokol
-                                                    </h4>
-                                                    <div class="itm_info">
-                                                        Sellülozik Boya
-                                                    </div>
-                                                    <div class="itm_weight">
-                                                        2.5 kq
-                                                    </div>
-                                                    <div class="itm_price">
-                                                        5.00 AZN
-                                                    </div>
-                                                    <div class="itm_stock">
-                                                        <span class="stock_text">Stokda: 25 ədəd</span>
-                                                    </div>
-                                                    <div class="itm_more">
-                                                        Səbətə əlavə et
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col item_col clearfix">
-                                            <div class="col_in">
-                                                <div class="fav_sect">
-                                                    <span class="favotites"></span>
-                                                </div>
-                                                <a href="#" class="item_img">
-                                                    <img src="img/item.png" alt="product" />
-                                                </a>
-                                                <div class="item_content">
-                                                    <h4 class="itm_title">
-                                                        Rokol
-                                                    </h4>
-                                                    <div class="itm_info">
-                                                        Sellülozik Boya
-                                                    </div>
-                                                    <div class="itm_weight">
-                                                        2.5 kq
-                                                    </div>
-                                                    <div class="itm_price">
-                                                        5.00 AZN
-                                                    </div>
-                                                    <div class="itm_stock">
-                                                        <span class="stock_text">Stokda: 25 ədəd</span>
-                                                    </div>
-                                                    <div class="itm_more">
-                                                        Səbətə əlavə et
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col item_col clearfix">
-                                            <div class="col_in">
-                                                <div class="fav_sect">
-                                                    <div class="offer-tag">
-                                                        <p class="offer_val">HƏFTƏNİN TƏKLİFİ</p>
-                                                    </div>
-                                                    <!-- click after addclass "dofav" -->
-                                                    <span class="favotites "></span>
-                                                </div>
-                                                <a href="#" class="item_img">
-                                                    <img src="img/item.png" alt="product" />
-                                                </a>
-                                                <div class="item_content">
-                                                    <h4 class="itm_title">
-                                                        Rokol
-                                                    </h4>
-                                                    <div class="itm_info">
-                                                        Sellülozik Boya
-                                                    </div>
-                                                    <div class="itm_weight">
-                                                        2.5 kq
-                                                    </div>
-                                                    <div class="itm_price">
-                                                        <span class="old-price">5.00 AZN</span>
-                                                        <span class="new-price">4.50 AZN</span>
-                                                    </div>
-                                                    <div class="itm_stock">
-                                                        <span class="stock_text">Stokda: 25 ədəd</span>
-                                                    </div>
-                                                    <div class="itm_more">
-                                                        Səbətə əlavə et
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col item_col clearfix">
-                                            <div class="col_in">
-                                                <div class="fav_sect">
-                                                    <span class="favotites"></span>
-                                                </div>
-                                                <a href="#" class="item_img">
-                                                    <img src="img/item.png" alt="product" />
-                                                </a>
-                                                <div class="item_content">
-                                                    <h4 class="itm_title">
-                                                        Rokol
-                                                    </h4>
-                                                    <div class="itm_info">
-                                                        Sellülozik Boya
-                                                    </div>
-                                                    <div class="itm_weight">
-                                                        2.5 kq
-                                                    </div>
-                                                    <div class="itm_price">
-                                                        5.00 AZN
-                                                    </div>
-                                                    <div class="itm_stock">
-                                                        <span class="stock_text">Stokda: 25 ədəd</span>
-                                                    </div>
-                                                    <div class="itm_more">
-                                                        Səbətə əlavə et
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col item_col clearfix">
-                                            <div class="col_in">
-                                                <div class="fav_sect">
-                                                    <!-- click after addclass "dofav" -->
-                                                    <span class="favotites dofav"></span>
-                                                </div>
-                                                <a href="#" class="item_img">
-                                                    <img src="img/item.png" alt="product" />
-                                                </a>
-                                                <div class="item_content">
-                                                    <h4 class="itm_title">
-                                                        Rokol
-                                                    </h4>
-                                                    <div class="itm_info">
-                                                        Sellülozik Boya
-                                                    </div>
-                                                    <div class="itm_weight">
-                                                        2.5 kq
-                                                    </div>
-                                                    <div class="itm_price">
-                                                        5.00 AZN
-                                                    </div>
-                                                    <div class="itm_stock">
-                                                        <span class="stock_text">Stokda: 25 ədəd</span>
-                                                    </div>
-                                                    <div class="itm_more">
-                                                        Səbətə əlavə et
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Product similar items -->
-
-
-                        </div>
-                    </div>
-                    <!-- Wrap Category section -->
-
-            </main>
-
-            <footer>
-                <div class="footer_full clearfix">
-                    <div class="main_center clearfix">
-                        <div class="ftr_top clearfix">
-
-                            <div class="ftr_left">
-                                <div class="logo_sect clearfix">
-                                    <a href="/" class="logo">
-                                        <div class="logo_img">
-                                            <img src="img/icons/logo.svg" alt="" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="copyrite_text">
-                                    "ROKOL" boya zavodu <br>
-                                    Bakı-Sumqayıt yolu, 13,5 km <br>
-                                    AZ0123 Bakı, Azərbaycan
-                                </div>
-                            </div>
-                            <div class="ftr_right">
-
-                                <div class="ftr_menu_sect">
-                                    <ul>
-                                        <span class="fm_hd">Menular </span>
-                                        <li>
-                                            <a href="" class="">HAQQIMIZDA </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">MƏHSULLAR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">RƏNGLƏR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">HəftənİN TƏKLİFİ </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">XƏBƏRLƏR </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">BLOQ </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">Əlaqə </a>
-                                        </li>
-
-                                    </ul>
-                                    <ul>
-                                        <span class="fm_hd">Kateqoriyalar </span>
-                                        <li>
-                                            <a href="" class="">Dekorativ Boyalar </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">Sənaye Boyaları </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">inaat Boyaları </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">Digər </a>
-                                        </li>
-
-                                    </ul>
-                                    <ul>
-                                        <span class="fm_hd">Ünvanlarımız </span>
-                                        <li>
-                                            <a href="" class="">Baş oﬁs </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="">Fabrik ünvanı</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="ftr_bottom clearfix">
-                            <div class="copyrite">
-                                <div class="copyrite_inner">2024 © Bütün hüquqlar qorunur.</div>
-                            </div>
-                            <div class="ftr_social">
-                                <a href="tel:*3030" class="call_center">*3030</a>
-                                <a href="mailto:info@rokol.az" class="call_center">info@rokol.az</a>
-                                <ul class="socials ftr_desk">
-                                    <li>
-                                        <a href="">
-                                            <img src="img/icons/fb_w.svg" alt="">
+                                <ul class="footer_menu">
+                                    <li><span class="fm_hd">VIL haqqında</span></li>
+                                    <li><a href="#">Haqqımızda</a></li>
+                                    <li><a href="#">Bloqlar</a></li>
+                                    <li><a href="#">Aksiyalar</a></li>
+                                    <li><a href="#">Şərtlər / Qaydalar</a></li>
+                                    <li><a href="#">Məxfilik siyasəti</a></li>
+                                    <li><a href="#">Çatdırılma</a></li>
+                                    <li><a href="#">Əlaqə</a></li>
+                                </ul>
+                                <ul class="footer_menu">
+                                    <li><span class="fm_hd">Əlaqə</span></li>
+                                    <li class="contact_list">
+                                        <img src="assets/icons/call.svg" alt="Call" />
+                                        <a href="tel:*3030" class="call_center">
+                                            <sup>*</sup> 3030
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/icons/ins_w.svg" alt="">
-                                        </a>
+                                    <li class="contact_list">
+                                        <img src="assets/icons/mail.svg" alt="Email" />
+                                        <a href="mailto:info@vil.az">info@vil.az</a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/icons/tiktok_w.svg" alt="">
-                                        </a>
+                                    <li class="contact_list">
+                                        <img src="assets/icons/phone.svg" alt="Phone" />
+                                        <a href="tel:+994 000 00 00">+994 000 00 00</a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/icons/lnkd_w.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="img/icons/ytb_w.svg" alt="">
-                                        </a>
+                                    <li class="contact_list">
+                                        <img src="assets/icons/loc.svg" alt="Phone" />
+                                        <a href="#">Bakı-Sumqayıt yolu, 13,5 km AZ0123 Bakı, Azərbaycan</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+                <div class="copyrite">
+                    <div class="main_center clearfix">
+                        <div class="copyrite_inner">
+                            COPYRIGHT © VIL AZ. ALL RIGHTS RESERVED.
+                            <ul class="socials">
+                                <li>
+                                    <a href="#" class="social_icon" target="_blank">
+                                        <span class="scl_icn">
+                                                <img
+                                                    src="assets/icons/lnkd_f.svg"
+                                                    alt="Linkedn" />
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social_icon" target="_blank">
+                                        <span class="scl_icn">
+                                                <img
+                                                    src="assets/icons/ins_f.svg"
+                                                    alt="Instagram" />
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social_icon" target="_blank">
+                                        <span class="scl_icn">
+                                                <img
+                                                    src="assets/icons/ytb_f.svg"
+                                                    alt="Youtube" />
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social_icon" target="_blank">
+                                        <span class="scl_icn">
+                                                <img
+                                                    src="assets/icons/wp_f.svg"
+                                                    alt="Whatsapp" />
+                                            </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/RokolBoyalari" class="social_icon" target="_blank">
+                                        <span class="scl_icn">
+                                                <img
+                                                    src="assets/icons/fb_f.svg"
+                                                    alt="Facebook" />
+                                            </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        </div>
-    </body>
+    </div>
+</body>
+
+<!-- Use to all pages  js-->
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/myjs.js"></script>
+<!-- Use to all pages  js-->
 
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- gallery -->
-    <script src='js/gallery/picturefill.min.js'></script>
-    <!-- <script src='js/gallery/lg-fullscreen.js'></script> -->
-    <script src='js/gallery/lightgallery.js'></script>
-    <!--<script src='js/gallery/lg-thumbnail.js'></script>-->
-    <script src='js/gallery/lg-autoplay.js'></script>
-    <script src='js/gallery/lg-zoom.js'></script>
-    <script src='js/gallery/lg-hash.js'></script>
-    <script src='js/gallery/lg-pager.js'></script>
-    <script src='js/gallery/jquery.mousewheel.min.js'></script>
-    <script src="js/gallery/gallery_index.js"></script>
-    <!-- <script src="js/gallery/lightgallery.min.js"></script> -->
-    <script src="js/gallery/lg-fullscreen.min.js"></script>
-    <!-- gallery -->
+<!-- Use this pages  js-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<!-- slider main js -->
+<script>
+    var swiper = new Swiper(".mySwiper_thumb", {
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper_main", {
+        loop: true,
+        spaceBetween: 16,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
+<script>
+    $('.open_catg_menu').click(function() {
+        $('.wrap_category_menu').fadeToggle();
+        $('body').toggleClass('mm_noscroll');
+        $(this).toggleClass('clicked');
+    });
+    $(function() {
+        function showPanel(key) {
+            $('#leftTabs .catg_tab')
+                .removeClass('active')
+                .filter('[data-tab="' + key + '"]')
+                .addClass('active');
+            $('#rightContent .panel_menu')
+                .removeClass('active')
+                .filter('[data-child="' + key + '"]')
+                .addClass('active');
+        }
 
-    <script src="js/jquery.matchHeight-min.js"></script>
-    <script src="js/myjs.js"></script>
-    <script>
-        $(document).ready(function () {
-            var maxCount = 15;
-            var minCount = 0;
-
-            $('.pr_plus').on('click', function () {
-                var currentCount = parseInt($('.product_counter input').val());
-                if(currentCount < maxCount) {
-                    currentCount++;
-                    $('.product_counter input').val(currentCount);
-                    $('.pr_number').text("(" + currentCount + ")");
-                }
-            });
-
-            $('.pr_minus').on('click', function () {
-                var currentCount = parseInt($('.product_counter input').val());
-                if(currentCount > minCount) {
-                    currentCount--;
-                    $('.product_counter input').val(currentCount);
-                    $('.pr_number').text("(" + currentCount + ")");
-                }
-            });
+        $('#leftTabs').on('click', '.catg_tab', function() {
+            showPanel($(this).data('tab'));
         });
-    </script>
+
+        // #tab=4 desteği
+        const m = location.hash.match(/tab=(\w+)/);
+        if (m) showPanel(m[1]);
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        var maxCount = 15;
+        var minCount = 0;
+
+        $('.pr_plus').on('click', function() {
+            var currentCount = parseInt($('.product_counter input').val());
+            if (currentCount < maxCount) {
+                currentCount++;
+                $('.product_counter input').val(currentCount);
+                $('.pr_number').text("(" + currentCount + ")");
+            }
+        });
+
+        $('.pr_minus').on('click', function() {
+            var currentCount = parseInt($('.product_counter input').val());
+            if (currentCount > minCount) {
+                currentCount--;
+                $('.product_counter input').val(currentCount);
+                $('.pr_number').text("(" + currentCount + ")");
+            }
+        });
+    });
+</script>
+<!-- Use this pages  js-->
 
 </html>
