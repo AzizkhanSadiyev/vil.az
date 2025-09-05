@@ -2285,33 +2285,6 @@
                                     </div>
                                 </a>
                             </div>
-                            <!-- <ul class="footer_menu">
-                                    <li>
-                                        <span>Ünvan:</span>
-                                        <a
-                                            href="https://maps.app.goo.gl/bEMzV6iHnRnKD1uh8"
-                                            target="_blank"
-                                            class>
-                                            Azərbaycan, Abşeron, Masazır-2, AZ0123
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span>E-mail:</span>
-                                        <a
-                                            href="mailTo:info@matanata.com"
-                                            class>
-                                            info@matanata.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span>Telefon:</span>
-                                        <a
-                                            href="tel:+994102603030"
-                                            class>
-                                            +994 10 260 30 30
-                                        </a>
-                                    </li>
-                                </ul> -->
                         </div>
                         <div class="ftr_right">
                             <div class="ftr_menu_sect">
@@ -2454,7 +2427,18 @@
         if (m) showPanel(m[1]);
     });
 </script>
-
+<script>
+    // *Favorites 
+    function doFav() {
+        $(".favotites").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation()
+            $(this).toggleClass("dofav");
+        });
+    }
+    doFav();
+    // *Favorites
+</script>
 <!-- Use this pages  js-->
 
 </html>

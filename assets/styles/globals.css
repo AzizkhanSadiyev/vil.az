@@ -1769,6 +1769,10 @@ body {
     color: #C3C3C3;
 }
 
+.breadcrumb span {
+    white-space: nowrap;
+}
+
 .breadcrumb a {
     display: inline-flex;
     align-items: center;

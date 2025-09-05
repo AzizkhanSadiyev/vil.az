@@ -1204,8 +1204,8 @@
                             <div class="product_detail">
                                 <div class="product_content_sect">
                                     <div class="product_info_table">
-                                        <p class="pr_short_info">Məhsulun kodu: </p>
-                                        <h1 class="product_title">ROKOL Epoksid Döşəmə Örtüyü Portağal Qabığı Effektli</h1>
+                                        <p class="pr_short_info">Məhsul kodu: 163023 </p>
+                                        <h1 class="product_title">Epoksid Bazaslı Təmir Qarışığı EPOKS 300</h1>
 
                                         <div class="price_section">
                                             <div class="pr_price_info">
@@ -1218,37 +1218,27 @@
                                         <div class="pr_stock_info">
                                             EPOKS 300 – yüksək möhkəmlik və dayanıqlılıq təmin edən, beton və metal səthlərin təmiri üçün nəzərdə tutulmuş epoksid əsaslı qarışıqdır.
                                         </div>
-                                        <div class="pr_row">
-                                            <div class="pr_cat_name">Kateqoriya:</div>
-                                            <div class="pr_cat_info">Epoksid örtük məhsulları, solventsiz</div>
-                                        </div>
-                                        <div id="color_weights">
-                                            <div class="choose_weight">
-                                                <div class="pr_select_title">Məhsulu seçin:</div>
-                                                <div class="filter_check_items">
-                                                    <a href="https://rokol.az/product/81?price_id=128" class="f_check_type radio_btn">
-                                                        <input type="radio" name="weight" value="9" checked>
-                                                        <span>20 Kq</span>
-                                                    </a>
+                                        <div class="choose_weight">
+                                            <div class="pr_select_title">Məhsulu seçin:</div>
+                                            <div class="pr_select_row">
+                                                <div class="pr_select_col">
+                                                    <div class="pr_select_label">Rəng</div>
+                                                    <select name="selelct_color">
+                                                        <option value="0">Göy</option>
+                                                        <option value="1">Qırmızı</option>
+                                                        <option value="0">Sarı</option>
+                                                    </select>
+                                                </div>
+                                                <div class="pr_select_col">
+                                                    <div class="pr_select_label">Çəki</div>
+                                                    <select name="selelct_color">
+                                                        <option value="0">10 kq</option>
+                                                        <option value="1">15 kq</option>
+                                                        <option value="0">25 kq</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-
-
-                                        <!-- <div class="pr_tbl_right">
-                                            <div class="pr_main_buttons">
-                                                <a href="https://rokol.az/storage/pdfs/RrPkVAPUGuOHqQblNwgmTlXhybxnbMKAGO9MLopR.pdf" target="_blank" class="pr_buttons">
-                                                    <img src="https://rokol.az/img/icons/pr_pdf.svg?v1" alt="pdf">
-                                                </a>
-
-
-
-                                                <a href="#" target="_blank" class="pr_buttons">
-                                                    <img src="https://rokol.az/img/icons/pr_print.svg?v1" alt="print">
-                                                </a>
-                                            </div>
-                                        </div> -->
-
                                     </div>
                                     <div class="product_select_proporties">
                                         <div class="pr_row add_backet_sect">
@@ -1256,30 +1246,28 @@
                                                 <div class="filter_check_items">
                                                     <div class="product_counter">
                                                         <input type="hidden" name="counter" value="1">
-                                                        <button type="button" class="pr_btn_counter pr_minus"></button>
+                                                        <button type="button" class="pr_btn_counter pr_minus">-</button>
                                                         <div class="pr_number_sect"><span class="pr_number">1</span></div>
-                                                        <button type="button" class="pr_btn_counter pr_plus"></button>
+                                                        <button type="button" class="pr_btn_counter pr_plus">+</button>
                                                     </div>
-
                                                 </div>
                                             </div>
-                                            <div class="btn_detail btn_basket" onclick="addToCart(81)">
+                                            <div class="btn_detail btn_basket">
                                                 <span class="add_basket detail_basket_btn">
-                                            Səbətə əlavə et
-                                        </span>
+                                                    Səbətə əlavə et
+                                                </span>
                                                 <span class="added_basket">
-                                            Səbətə əlavə edildi
-                                        </span>
+                                                    Səbətə əlavə edildi
+                                                </span>
                                                 <span class="added_basket color_sect">
-                                            Rəng seçimi edin
-                                        </span>
+                                                    Rəng seçimi edin
+                                                </span>
                                             </div>
-                                            <!-- click after addclass "dofav" -->
 
-                                            <div class="btn_detail btn_fav " data-product-id="81" data-price-id="128">
-                                                <span>
-                                            Seçilmişlərdə saxla
-                                        </span>
+                                            <div class="pr_action_btn">
+                                                <span class="shop_icon icon_calc open_calc"></span>
+                                                <!-- click after addclass "dofav" -->
+                                                <span class="favotites " data-product-id="81" data-price-id="128"></span>
                                             </div>
 
                                         </div>
@@ -1319,18 +1307,66 @@
                     <!-- Product detail section -->
 
                     <!-- Product tab content -->
-
                     <div class="section_wrap wrap_tab_product">
-                        <div class="sect_body clearfix">
-
+                        <div class="sect_body ">
                             <div class="benefit_tabs">
                                 <div class="bf_tb_hd">
-                                    <div class="bt_tb_title clicked_tab_btn active" data-id="0">Məhsul haqqında</div>
-                                    <div class="bt_tb_title clicked_tab_btn" data-id="1">Texniki göstəricilər</div>
-                                    <div class="bt_tb_title clicked_tab_btn" data-id="2">Zəmanət və texniki dəstək</div>
+                                    <div class="bt_tb_title clicked_tab_btn active" data-id="0">Xüsusiyyətlər </div>
+                                    <div class="bt_tb_title clicked_tab_btn " data-id="1">Məhsul haqqında</div>
+                                    <div class="bt_tb_title clicked_tab_btn" data-id="2">Texniki göstəricilər</div>
+                                    <div class="bt_tb_title clicked_tab_btn" data-id="3">Zəmanət və texniki dəstək</div>
                                 </div>
                                 <div class="bf_tb_content">
                                     <div class="bf_tb_items " data-id="0">
+                                        <div class="indicators_content">
+                                            <div class="indicators_items">
+                                                <h6 class="indicator_title">Specification</h6>
+                                            </div>
+                                            <ul class="specif_list">
+                                                <li>
+                                                    <span class="specif_name">Məqalə</span>
+                                                    <span class="specif_val">69 069</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Brend</span>
+                                                    <a href="#" class="specif_val">Çiçəklənən</a>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Məhsul növü</span>
+                                                    <a href="#" class="specif_val">Boya</a>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Baxın</span>
+                                                    <span class="specif_val">Yağ</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">İş növü</span>
+                                                    <span class="specif_val">Daxili işlər</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Ərizə</span>
+                                                    <span class="specif_val">Divarlar üçün</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">İstehsalçı rəngi</span>
+                                                    <span class="specif_val">Surik</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Parlaqlıq dərəcəsi</span>
+                                                    <span class="specif_val">Parlaq</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Vəqf növü</span>
+                                                    <span class="specif_val">Taxta , Metal</span>
+                                                </li>
+                                                <li>
+                                                    <span class="specif_name">Solvent növü</span>
+                                                    <span class="specif_val">Ağ ruh</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bf_tb_items " data-id="1">
                                         <div class="indicators_content">
                                             <div class="indicators_items">
                                                 <h6 class="indicator_title">Məhsul haqqında:</h6>
@@ -1364,7 +1400,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="bf_tb_items " data-id="1">
+                                    <div class="bf_tb_items " data-id="2">
                                         <div class="indicators_content">
                                             <div class="indicators_items">
                                                 <h6 class="indicator_title">Xüsusiyyətlər:</h6>
@@ -1426,7 +1462,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="bf_tb_items " data-id="2">
+                                    <div class="bf_tb_items " data-id="3">
                                         <div class="indicators_content">
                                             <ul style="list-style: none;margin: 0">
                                                 <li>
@@ -1452,76 +1488,487 @@
                         </div>
                     </div>
                     <!-- Product tab content -->
-                    <div class="modal detail_modal" id="new_address_modal" data-id="create_address_modal">
-                        <div class="modal_section">
-                            <div class="modal_container">
-                                <div class="modal_header">
-                                    <h5 class="modal_title">Ətraflı məlumat</h5>
-                                    <span class="close_modal"></span>
-                                </div>
-                                <div class="modal_body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at iusto similique delectus, quos nemo sunt porro vero ipsum sint nihil, voluptatum eaque accusantium culpa inventore, pariatur labore debitis voluptates. Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Optio excepturi architecto possimus aspernatur explicabo. Similique, commodi. Est a tempore perspiciatis nisi nemo quidem consequuntur officia ratione? Obcaecati, nobis? Ad, minima?
-                                </div>
-                            </div>
+                </div>
+
+                <!-- wrap_chance -->
+                <div class="section_wrap wrap_slider wrap_chance pad_top_56 pad_bottom_56">
+                    <div class="main_center ">
+                        <div class="sect_header pad_bottom_40 title_center">
+                            <h3 class="sect_title title_center fsize_32">Birlikdə alırlar</h3>
                         </div>
-                    </div>
-                    <div class="modal video_modal" id="new_address_modal" data-id="create_address_modal">
-                        <div class="modal_section">
-                            <div class="modal_container">
-                                <div class="modal_body">
-                                    <div class="close_modal_block">
-                                        <span class="close_modal"></span>
+                        <div class="sect_body slider_container ">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_6.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_1.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_4.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_1.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_2.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper_arrows clearfix">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- wrap_chance -->
+
+                <!-- wrap_popular -->
+                <div class="section_wrap wrap_slider wrap_popular pad_top_56 pad_bottom_56">
+                    <div class="main_center ">
+                        <div class="sect_header pad_bottom_40 title_center">
+                            <h3 class="sect_title title_center fsize_32">Populyar məhsullar </h3>
+                        </div>
+                        <div class="sect_body slider_container ">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_3.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_4.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_5.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_1.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col_item product_item">
+                                            <div class="col_in">
+                                                <div class="fav_sect">
+                                                    <div class="offer-tag">
+                                                        <p class="offer_val">15%</p>
+                                                    </div>
+                                                    <span class="favotites dologin"></span>
+                                                </div>
+                                                <a href="#">
+                                                    <div class="item_img">
+                                                        <img src="assets/images/card_6.png" alt="product" />
+                                                    </div>
+                                                </a>
+                                                <div class="item_content">
+                                                    <a href="#">
+                                                        <div class="itm_info">Açarlar</div>
+                                                        <h4 class="itm_title">
+                                                            <span class="itm_name card_head">FAB Keramika Yapışqanı 25KG</span>
+                                                            <!-- <span class="itm_weight">1 L</span> -->
+                                                        </h4>
+                                                    </a>
+                                                    <!-- <div class="itm_stock stocked">
+                                                    <span class="stock_text">Stokda: 25 ədəd</span>
+                                                </div> -->
+                                                    <div class="itm_price">
+                                                        <a href="#" class="sales">
+                                                            <span class="new-price">139 AZN</span>
+                                                            <span class="old-price">189 AZN</span>
+                                                        </a>
+                                                        <a href="#" class="itm_more"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper_arrows clearfix">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- wrap_popular -->
+
+
+
+
+
+                <div class="modal detail_modal" id="new_address_modal" data-id="create_address_modal">
+                    <div class="modal_section">
+                        <div class="modal_container">
+                            <div class="modal_header">
+                                <h5 class="modal_title">Ətraflı məlumat</h5>
+                                <span class="close_modal"></span>
+                            </div>
+                            <div class="modal_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at iusto similique delectus, quos nemo sunt porro vero ipsum sint nihil, voluptatum eaque accusantium culpa inventore, pariatur labore debitis voluptates. Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Optio excepturi architecto possimus aspernatur explicabo. Similique, commodi. Est a tempore perspiciatis nisi nemo quidem consequuntur officia ratione? Obcaecati, nobis? Ad, minima?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal video_modal" id="new_address_modal" data-id="create_address_modal">
+                    <div class="modal_section">
+                        <div class="modal_container">
+                            <div class="modal_body">
+                                <div class="close_modal_block">
+                                    <span class="close_modal"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal self_calculator_modal" id="detailCalculatorModal" data-id="detailCalculatorModal">
-                        <div class="modal_section" style="overflow: visible;">
-                            <div class="modal_container" style="overflow: visible;">
-                                <div class="modal_header">
-                                    <h5 class="modal_title">Kalkulyator</h5>
-                                    <span class="close_modal"></span>
-                                </div>
-                                <div class="modal_body">
-                                    <div class="select_item" style="width: 100%">
-                                        <div class="calc_inputs">
-                                            <div class="form_item">
-                                                <label for="" id="width-label">Səthin eni (m):</label>
-                                                <input type="text" id="selfWidth" name="email" placeholder="Səthin eni (m):" value="" class="item_input">
-                                            </div>
-                                            <div class="form_item">
-                                                <label for="" id="length-label">Səthin uzunluğu (m):</label>
-                                                <input type="text" name="email" id="selfLength" placeholder="Səthin uzunluğu (m):" value="" class="item_input">
-                                            </div>
-                                            <div class="form_item">
-                                                <label for="">Tövsiyyə olunan qatın sayı:</label>
-                                                <input type="text" name="email" id="selfLayers" placeholder="Tövsiyyə olunan qatın sayı:" value="0" class="item_input">
-                                            </div>
-                                            <div class="form_item disable_input">
-                                                <label for="">Sərfiyyat norması (kq/kv.m):</label>
-                                                <input disabled type="text" name="email" id="selfConsumption" placeholder="Sərfiyyat norması (kq/kv.m):" value="" class="item_input">
-                                            </div>
-                                            <div class="form_item">
-                                                <button type="submit" class="btn_sign submit_btn" id="selfCalculateBtn">Hesabla
+                </div>
+                <div class="modal self_calculator_modal" id="detailCalculatorModal" data-id="detailCalculatorModal">
+                    <div class="modal_section" style="overflow: visible;">
+                        <div class="modal_container" style="overflow: visible;">
+                            <div class="modal_header">
+                                <h5 class="modal_title">Kalkulyator</h5>
+                                <span class="close_modal"></span>
+                            </div>
+                            <div class="modal_body">
+                                <div class="select_item" style="width: 100%">
+                                    <div class="calc_inputs">
+                                        <div class="form_item">
+                                            <label for="" id="width-label">Səthin eni (m):</label>
+                                            <input type="text" id="selfWidth" name="email" placeholder="Səthin eni (m):" value="" class="item_input">
+                                        </div>
+                                        <div class="form_item">
+                                            <label for="" id="length-label">Səthin uzunluğu (m):</label>
+                                            <input type="text" name="email" id="selfLength" placeholder="Səthin uzunluğu (m):" value="" class="item_input">
+                                        </div>
+                                        <div class="form_item">
+                                            <label for="">Tövsiyyə olunan qatın sayı:</label>
+                                            <input type="text" name="email" id="selfLayers" placeholder="Tövsiyyə olunan qatın sayı:" value="0" class="item_input">
+                                        </div>
+                                        <div class="form_item disable_input">
+                                            <label for="">Sərfiyyat norması (kq/kv.m):</label>
+                                            <input disabled type="text" name="email" id="selfConsumption" placeholder="Sərfiyyat norması (kq/kv.m):" value="" class="item_input">
+                                        </div>
+                                        <div class="form_item">
+                                            <button type="submit" class="btn_sign submit_btn" id="selfCalculateBtn">Hesabla
                                 </button>
-                                            </div>
-                                            <div class="modal answer_modal">
-                                                <div class="modal_section" style="overflow: visible;">
-                                                    <div class="modal_container" style="overflow: visible;">
-                                                        <div class="modal_header">
-                                                            <h5 class="modal_title">Hesablama nəticəsi</h5>
-                                                            <span class="close_modal"></span>
-                                                        </div>
-                                                        <div class="modal_body">
-                                                            <p>
-                                                                <strong>Hesablama nəticəsi: </strong>
-                                                                <span id="selfResult">
+                                        </div>
+                                        <div class="modal answer_modal">
+                                            <div class="modal_section" style="overflow: visible;">
+                                                <div class="modal_container" style="overflow: visible;">
+                                                    <div class="modal_header">
+                                                        <h5 class="modal_title">Hesablama nəticəsi</h5>
+                                                        <span class="close_modal"></span>
+                                                    </div>
+                                                    <div class="modal_body">
+                                                        <p>
+                                                            <strong>Hesablama nəticəsi: </strong>
+                                                            <span id="selfResult">
 
                                                 </span>
-                                                            </p>
-                                                        </div>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1538,7 +1985,7 @@
 
         <footer class="footer">
             <div class="footer_full clearfix">
-                <div class="main_center clearfix">
+                <div class="main_center ">
                     <div class="ftr_top clearfix">
                         <div class="ftr_left">
                             <div class="logo_sect clearfix">
@@ -1724,7 +2171,7 @@
             if (currentCount < maxCount) {
                 currentCount++;
                 $('.product_counter input').val(currentCount);
-                $('.pr_number').text("(" + currentCount + ")");
+                $('.pr_number').text(currentCount);
             }
         });
 
@@ -1733,9 +2180,96 @@
             if (currentCount > minCount) {
                 currentCount--;
                 $('.product_counter input').val(currentCount);
-                $('.pr_number').text("(" + currentCount + ")");
+                $('.pr_number').text(currentCount);
             }
         });
+    });
+</script>
+<script>
+    // *Favorites 
+    function doFav() {
+        $(".favotites").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation()
+            $(this).toggleClass("dofav");
+        });
+    }
+    doFav();
+    // *Favorites
+</script>
+
+<script>
+    var swiperChance = new Swiper('.wrap_chance .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.wrap_chance .swiper-button-next',
+            prevEl: '.wrap_chance .swiper-button-prev',
+        },
+        pagination: {
+            el: '.wrap_chance .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: { // telefon
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            576: { // kiçik planşet
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            768: { // planşet
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1024: { // noutbuk və yuxarı
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        }
+    });
+    var swiperShares = new Swiper('.wrap_popular .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.wrap_popular .swiper-button-next',
+            prevEl: '.wrap_popular .swiper-button-prev',
+        },
+        pagination: {
+            el: '.wrap_popular .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
+        }
     });
 </script>
 <!-- Use this pages  js-->
